@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel client/index.html"
+    "client-start": "parcel client/index.html",
+    "server-start": "node server.js",
+    "start": "concurrently \"node server.js\" \"parcel client/Index.html\""
   },
   "keywords": [],
   "author": "",
