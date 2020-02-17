@@ -7,12 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-start": "parcel client/index.html",
     "server-start": "node server.js",
-    "start": "concurrently \"node server.js\" \"parcel client/Index.html\""
+    "start": "concurrently \"node server.js\" \"parcel client/Index.html\"",
+    "dev-start": "npm run client-start && npm run server-start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
