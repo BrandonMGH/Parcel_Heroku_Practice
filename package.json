@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "client-start": "parcel client/index.html",
+    "client-start": "parcel client/Index.html",
     "server-start": "node server.js",
+    "dev-build": "parcel build client/Index.html",
     "dev-start": "concurrently \"node server.js\" \"parcel client/Index.html\""
   },
   "keywords": [],
