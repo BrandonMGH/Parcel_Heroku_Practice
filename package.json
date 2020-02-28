@@ -5,19 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "client-start": "parcel client/Index.html",
-    "server-start": "node server.js",
-    "dev-build": "parcel build client/Index.html",
-    "dev-start": "concurrently \"node server.js\" \"parcel client/Index.html\""
+    "clientStart": "parcel client/Index.html",
+    "build": "parcel build client/Index.html",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonMGH/Parcel_Heroku_Practice.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonMGH/Parcel_Heroku_Practice/issues"
+  },
+  "homepage": "https://github.com/BrandonMGH/Parcel_Heroku_Practice#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router": "^5.1.2"
+  },
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
   }
 }
